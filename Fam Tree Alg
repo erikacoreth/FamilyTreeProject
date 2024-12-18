@@ -1,0 +1,19 @@
+1. Create class Node
+-attributes include:
+--self.name (name of the creature (node)
+--self.left (reference to the left child)
+--self.right (reference to the right child)
+--self.parent (reference to the parent node)
+-methods included:
+--add_child(child, direction)(adds a new child to the left or right based on given direction)
+--find_node(name)(recursively searches the tree for a node with a specific name)
+--print_tree(level=0)(recursively prints the tree structure with indentation based on depth)
+2. Create class Main
+-attribute include:
+--self.root(the root node of the tree which is initially none)
+-included method:
+--def menu is the only method in this class.
+---displays the main menu and handles user input and prompts for a root creature if the tree is empty.
+3. Execution
+--Program checks if it is being run as the main module and initializes an instance of the Main class.
+-Calls start method, launching an interactive menu for managing the creature tree until the user chooses to exit.
